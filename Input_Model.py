@@ -14,13 +14,13 @@ agegroup = st.sidebar.radio(
     'AgeGroup', ('Children', 'Adult', 'Old'))
 status = st.sidebar.selectbox(
     'DataStatus (Select Invalid Data if any value is missing) ', ('Valid Data', 'Invalid Data'))
-heartrate = st.sidebar.slider('HeartRate(bpm)', 0, 70, 200)
+heartrate = st.sidebar.slider('HeartRate(bpm)', 0, 200, 75)
 rr_ms = st.sidebar.slider(
-    'RR(ms)', 0, 900, 1500)
-pr_ms = st.sidebar.slider('PR(ms)', 0, 160, 500)
-qrs_ms = st.sidebar.slider('QRS(ms)', 0, 90, 500)
-qt_ms = st.sidebar.slider('QT(ms)', 0, 370, 500)
-qtc_ms = st.sidebar.slider('QTc(ms)', 0, 400, 500)
+    'RR(ms)', 0, 1500, 900)
+pr_ms = st.sidebar.slider('PR(ms)', 0, 500, 160)
+qrs_ms = st.sidebar.slider('QRS(ms)', 0, 500, 90)
+qt_ms = st.sidebar.slider('QT(ms)', 0, 500, 370)
+qtc_ms = st.sidebar.slider('QTc(ms)', 0, 500, 400)
 data = {'Gender': gender,
         'Date': date,
         'AgeGroup': agegroup,
